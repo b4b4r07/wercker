@@ -1,0 +1,6 @@
+box: wercker/step-shellcheck
+build:
+    steps:
+        shellcheck:
+            files: file.sh|test.sh
+            separator: "|"

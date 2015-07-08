@@ -1,6 +1,4 @@
 box: wercker/default
-services:
-    - wercker/step-shellcheck
 build:
     steps:
         shellcheck:

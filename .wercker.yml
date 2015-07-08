@@ -4,3 +4,9 @@ build:
         shellcheck:
             files: file.sh|test.sh
             separator: "|"
+deploy:
+    steps:
+        - script:
+            name: none
+            code: |
+                :

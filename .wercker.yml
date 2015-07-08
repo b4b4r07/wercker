@@ -1,12 +1,8 @@
-box: wercker/step-shellcheck
+box: wercker/default
+services:
+    - wercker/step-shellcheck
 build:
     steps:
         shellcheck:
             files: file.sh|test.sh
             separator: "|"
-deploy:
-    steps:
-        - script:
-            name: none
-            code: |
-                :

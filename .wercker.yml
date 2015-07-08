@@ -4,3 +4,8 @@ build:
         shellcheck:
             files: file.sh|test.sh
             separator: "|"
+deploy:
+    steps:
+        - github-create-release:
+            token: $GITHUB_TOKEN
+            tag: v1.0.0
